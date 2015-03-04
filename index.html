@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BrowserGame Sample</title>
+        <link ref="stylesheet" href="css/style.css" />
+        <script src="js/game.js" />
+    </head>
+     
+    <body>
+        <div id="box">
+            <nav>
+                <ul>
+                    <li id="main">Main</li>
+                    <li id="game">Spiel starten</li>
+                    <li id="settings">Einstellungen</li>
+                    <li id="highscore">Hall of Fame</li>
+                </ul>
+            </nav>
+            <button id="zurück">Zurück</button>
+            <div id="main">
+            <h1>Start</h1>
+                <p>Herzlich Willkommen bei <span id="gamename"></span><br />
+                    Für weitere Informationen lese unsere <span class="link" id="anleitung">Anleitung</span>.</p>
+            </div>
+            <div id="game">
+                <input type="text" name="username" id="username" /><br />
+                <button id="setScore">Score setzen</button>
+                <!-- <svg width="300" height="200">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198"
+                    style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+                </svg> -->
+                <!-- content to be placed inside <body>…</body> -->
+                <div class='container container--realistic'>
+                  <div class='cube'>
+                    <div class='face'></div>
+                    <div class='face'></div>
+                    <div class='face'></div>
+                    <div class='face'></div>
+                  </div>
+                </div>
+                <div class="live">
+                    <div class="figur preview">
+                        <div class="head"></div>
+                        <div class="head"></div>
+                        <div class="head"></div>
+                        <div class="head"></div>
+                        <div class="head"></div>
+                    </div>
+                    
+                    <div id="ingame">
+                    <div class="hidden figur">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="shown block patchy"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="settings">
+                <h1>Einstellungen</h1>
+                
+            </div>
+            <div id="anleitung">
+                <h1>Anleitung</h1>
+                <p>In der Navigation finden Sie alle wichtigen Seiten. Klicken Sie auf "<span class="link" id="game">Spiel starten</a>", um zu beginnen.</p>
+            </div>
+            <div id="highscore">
+                <table>
+                    <caption>HighScore</caption>
+                    <thead><tr><th>Spieler</th><th>Score</th></tr></thead>
+                    <tbody><tr><td></td><td></td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

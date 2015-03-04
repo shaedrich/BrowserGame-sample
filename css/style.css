@@ -1,0 +1,111 @@
+body {
+    background: 
+  /* On "top" */
+  repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    #ccc 10px,
+    #ccc 20px
+  ),
+  /* on "bottom" */
+  linear-gradient(
+    to bottom,
+    #eee,
+    #999
+  );
+}
+ 
+#box {
+    background-color: black;
+    color: white;
+    font-family: Comic Sans MS, fantasy;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+ 
+table {
+    border: 2px solid white;
+    width: 50%;
+    vertical-align: middle;
+}
+ 
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+}
+ 
+div#game, div#settings, div#highscore, div#anleitung {
+    display: none;
+}
+ 
+.link:hover {
+    text-decoration: underline;
+}
+ 
+button:hover {
+    box-shadow: rgb(103, 166, 221) 0 0 15px 3px;
+    border: none;
+    border-radius: 3px;
+}
+ 
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
+.figur .head {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: orange;
+}
+ 
+.figur .body {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 60px solid orange;
+  margin-top: -20px;
+  margin-left: 1.2px;
+}
+ 
+.block {
+    background-color: silver;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+}
+ 
+.block.patchy:hover {
+    background-color: rgba(191, 193, 194,0.3);
+    background-image:url('http://www.kneller-gifs.de/backgrounds/m/bg_mauern19.jpg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:"alpha(opacity=50)";
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+    opacity: 0.6;
+}
+.blockhover {
+    background-color: rgba(191, 193, 194,0.3);
+    background-image:url('http://www.kneller-gifs.de/backgrounds/m/bg_mauern19.jpg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:"alpha(opacity=50)";
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+    opacity: 0.6;
+}
